@@ -28,8 +28,35 @@ class _HomePageState extends State<HomePage> {
         var todos = controller.todos[index];
         String id = todos.id.toString();
         String title = todos.title;
-        return ListTile(
-          title: Text('$id - $title'),
+        String fotos = todos.thumbnailUrl;
+
+        return Column(
+          
+          mainAxisAlignment: MainAxisAlignment.center,
+
+          children: [
+
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+
+                Text(id, style: TextStyle(
+                   fontSize: 16 
+                  ),
+                ),
+                Image.network(fotos),
+              ],
+              
+            ),
+            
+            SizedBox(
+
+              height: 10,
+            ),
+
+
+          ],
+
         );
       },
     );
@@ -84,7 +111,7 @@ class _HomePageState extends State<HomePage> {
               controller.start();
           },),
        ],
-       title: Text('APIT JSON'),
+       title: Text('Praticando API'),
        backgroundColor: Colors.black,
 
 

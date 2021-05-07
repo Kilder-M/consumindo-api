@@ -1,16 +1,18 @@
 class TodoModel {
   final int id;
-  final int userId;
+  final int albumId;
   final String title;
-  final bool completed;
+  final String thumbnailUrl;
+  final String url;
 
-  TodoModel({this.id, this.userId, this.title, this.completed});
+  TodoModel( {this.url,this.id, this.albumId, this.title, this.thumbnailUrl});
 
    factory TodoModel.fromJson(Map json){
      return TodoModel(
        id: json['id'],
-       userId: json['userId'],
-       completed: json['completed'],
+       albumId: json['userId'],
+       url: json['url'],
+       thumbnailUrl: json['thumbnailUrl'],
        title: json['title'],
      );
 
@@ -19,9 +21,10 @@ class TodoModel {
      Map toJson(){
        return {
          'id': id,
-         'userId': userId,
+         'albumId': albumId,
          'title': title,
-         'completed': completed,
+         'thumbnailUrl': thumbnailUrl,
+         'url': url,
 
        };
      

@@ -5,7 +5,7 @@ import '../Todo_model.dart';
 class TodoRepository {
 
 Dio dio ;
-final url = 'https://jsonplaceholder.typicode.com/todos/';
+final url = 'https://jsonplaceholder.typicode.com/photos/';
 
 TodoRepository([Dio cliente]) : dio = cliente ?? Dio();
 
