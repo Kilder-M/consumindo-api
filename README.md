@@ -9,4 +9,4 @@ Para praticar o consumo de AP1 criei esse projeto utilizando a framework Flutter
 
 ## Feito Com
 
-https://flutter.dev/ - Flutter é um kit de desenvolvimento de interface de usuário, de código aberto, criado pelo Google.
+* [Flutter](https://flutter.dev/) - Flutter é um kit de desenvolvimento de interface de usuário, de código aberto, criado pelo Google.
