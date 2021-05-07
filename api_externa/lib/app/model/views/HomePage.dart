@@ -40,8 +40,8 @@ class _HomePageState extends State<HomePage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
 
-                Text(id, style: TextStyle(
-                   fontSize: 16 
+                Text("$id - ", style: TextStyle(
+                   fontSize: 22 
                   ),
                 ),
                 Image.network(fotos),
